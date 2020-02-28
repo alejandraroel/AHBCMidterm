@@ -1,21 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace midterm
+namespace POSMidterm
+
+
 
 {
     public static class SubtotalBill
     {
 
-        public static double GetTotal(double cost, double qty)
+        public static double GetTotal(double price, double qty)
         {
-            double total = cost * qty;
-            return total;
+            double subtotal = price * qty;
+            return subtotal;
         }
 
-        public static double GetActualTotal(double cost, double qty)
+        public static double GetActualTotal(double price, double qty)
         {
-            double actualTotal = GetTotal(cost, qty) * 1.06;
+            double actualTotal = GetTotal(price, qty) * 1.06;
             return actualTotal;
         }
 
@@ -26,11 +28,6 @@ namespace midterm
         }
 
 
-
-
-        //below, what i think is happening is that there is a
-
-        
     }
 
 }
