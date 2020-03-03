@@ -2,9 +2,6 @@
 using System.Collections.Generic;
 
 namespace POSMidterm
-
-
-
 {
     public static class SubtotalBill
     {
@@ -23,7 +20,8 @@ namespace POSMidterm
 
         public static double GetChange(double amountTendered, double actualTotal)
         {
-            double changeTotal = amountTendered - actualTotal;
+
+            double changeTotal = amountTendered- actualTotal;
             return changeTotal;
         }
 
