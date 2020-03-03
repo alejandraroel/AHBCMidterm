@@ -9,15 +9,15 @@ namespace POSMidterm
     public static class SubtotalBill
     {
 
-        public static double GetTotal(double price, double qty)
+        public static double GetSubtotal(double price, double qty)
         {
             double subtotal = price * qty;
             return subtotal;
         }
 
-        public static double GetActualTotal(double price, double qty)
+        public static double GetGrandTotal(double price, double qty)
         {
-            double actualTotal = GetTotal(price, qty) * 1.06;
+            double actualTotal = GetGrandTotal(price, qty) * 1.06;
             return actualTotal;
         }
 
